@@ -4,18 +4,24 @@
     grid-template-rows: 6vh 6vh 6vh;
     background-color: var(--my-black); 
     border-radius: 2em;
-    border:.2em black solid;
 }
-.logo>img{
-    max-height: 10vw;
-    max-width: 10vw;
+.logo img{
+    max-height: 8vw;
+    max-width: 8vw;
     min-width: 100px;
     min-height: 100px;
-    grid-row:1/3;
-    margin: calc((6vh*3 - 100px)/2) calc((30vw - 100px)/2);
+    
 }
-.logo>h1{
+.imagem{
+    grid-row:1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1{
     grid-row-start:2;
     grid-row-end:2 ;
-    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    
 }
