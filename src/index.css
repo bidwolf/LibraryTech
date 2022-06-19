@@ -19,8 +19,8 @@ h6 {
 :root{
   font-size: 20px;
   box-sizing: border-box;
-  --main-color:#dd0000ff;
-  --second-color:#2800aaf3;
+  --main-color:rgb(253, 80, 80);
+  --second-color:#654fadf3;
   --my-black:rgb(48, 48, 48);
   
 }

@@ -6,7 +6,6 @@ function Topo() {
     <header className={styles.topo}>
         <Logo/>
         <Navegação />
-            
     </header> 
       );
 }

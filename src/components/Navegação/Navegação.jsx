@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Navegação.module.css";
 function Navegação() {
     return (
         <ul>
