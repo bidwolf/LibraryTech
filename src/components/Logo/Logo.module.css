@@ -1,6 +1,6 @@
 .logo{
     display: grid;
-    grid-template-columns: 30vw 70vw;
+    grid-template-columns: 30vw 60vw;
     grid-template-rows: 6vh 6vh 6vh;
     border-radius: 2em;
     position: relative;

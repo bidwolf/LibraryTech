@@ -1,12 +1,11 @@
 .thumb>img{
-    width: 15vw;
-    height: 30vh;
-    min-width: 200px;
-    min-height: 120px;
+    width: 14vw;
+    height: 36vh;
     margin: 2em;
     border-radius: .6em;
     border: .01em solid var(--light-gray);
     background-color: var(--contrast-color);    border-radius: .6em;
+    position: relative;
 }
 .card{
     max-width: 100%;
@@ -18,7 +17,34 @@
     margin-top: 2em;
     margin-right: 1em;
     margin-left: 1em;
+    position: relative;
+    /*Efeito de aumento do card*/
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: linear all 200ms;
+}
+.card::after{
+    /*Efeito de aumento do card*/
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    transition: linear all 200ms ;
+    z-index: -1;
+}
+.card:hover{
+transform: scale(1.05,1.05);
 }
 .details{
+    z-index: 1;
     margin-left: .2em;
+    position: relative;
+}
+.details a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--light-gray);
+    border-radius: .6em;
+    background-color: var(--main-color);
+    padding: .2em;
+}
+.details a:hover{
+    color: var(--contrast-color);
+    transition:linear all 450ms;
 }

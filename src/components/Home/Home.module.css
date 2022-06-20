@@ -10,8 +10,10 @@
     top:0;
     margin-top: 2em;
     text-align: center;
+    padding-top: .2em;
     background-color: var(--my-black);
     border-radius: .6em;
+    color: var(--contrast-color);
     border: .01em solid var(--light-gray);
     
 }

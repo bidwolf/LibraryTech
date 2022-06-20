@@ -1,17 +1,21 @@
 .navbar ul{
     list-style:none;
     display: flex;
-    justify-content: space-around;
-    border-radius: 0.8em;
+    justify-content: space-between;
     flex-flow: row;
     position: relative;
     top: 0;
     margin-top: 2em;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 .navbar li a {
     border-radius: 0.6em;
     padding: 10px;
+    border: 1px solid #ffffff00;
 }
 .navbar li a:hover{
-    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px white solid;
+    transition: all 200ms;
+    background-color: #00000021;
 }
