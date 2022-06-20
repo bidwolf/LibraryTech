@@ -1,0 +1,17 @@
+.main{
+    position: relative;
+    top :0;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 44vw 44vw;
+}
+.home__header{
+    position: relative;
+    top:0;
+    margin-top: 2em;
+    text-align: center;
+    background-color: var(--my-black);
+    border-radius: .6em;
+    border: .01em solid var(--light-gray);
+    
+}

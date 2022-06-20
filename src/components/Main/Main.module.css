@@ -1,10 +1,8 @@
 .principal{
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     grid-column: 1/5;
-    grid-row: 2/3;
-}
-.box{
-    background-color: red;
-    border: 2px black solid;
+    grid-row: 2;
+    position: relative;
+    
 }

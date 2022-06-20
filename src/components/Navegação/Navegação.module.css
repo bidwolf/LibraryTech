@@ -1,15 +1,17 @@
-ul{
+.navbar ul{
     list-style:none;
     display: flex;
     justify-content: space-around;
     border-radius: 0.8em;
     flex-flow: row;
+    position: relative;
+    top: 0;
+    margin-top: 2em;
 }
-li a {
+.navbar li a {
     border-radius: 0.6em;
     padding: 10px;
-    background-color: var(--my-black);
 }
-li a:hover{
+.navbar li a:hover{
     background-color: rgba(0, 0, 0, 0.7);
 }

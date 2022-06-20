@@ -7,6 +7,8 @@
 body {
   margin: 0;
   font: 1rem sans-serif;
+  background-color: var(--bg-color);
+  color: var(--main-color);
 }
 h1,
 h2,
@@ -21,11 +23,8 @@ h6 {
   box-sizing: border-box;
   --main-color:rgb(253, 80, 80);
   --second-color:#654fadf3;
-  --my-black:rgb(48, 48, 48);
-  
-}
-#root{
-display: grid;
-grid-template-columns: 25vw 25vw 25vw 25vw;
-grid-template-rows: 33.33vh 33.33vh 33.34vh;
+  --my-black:rgb(87, 87, 87);
+  --bg-color:rgb(233, 233, 233);
+  --contrast-color:#EEEEEE;
+  --light-gray:rgb(221, 221, 221);
 }

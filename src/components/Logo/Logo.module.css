@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: 30vw 70vw;
     grid-template-rows: 6vh 6vh 6vh;
-    background-color: var(--my-black); 
     border-radius: 2em;
+    position: relative;
+    top: 0;
 }
 .logo img{
     max-height: 8vw;

@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Card.module.css"
 function Card({dados}) {
     
     return (
@@ -8,14 +9,16 @@ function Card({dados}) {
             
             dados.map((books) => (
                 
-        <div className="card">
-        <div className="thumb"><img src={ books.imagem.src} alt={books.imagem.alt}/></div>
-            <div className="detalhes">
-            <h3>{ books.title}</h3>
+        <div className={styles.card}>
+            <div className={styles.thumb}>
+                <img src={ books.imagem.src} alt={books.imagem.alt}/>
+            </div>
+            <div className={styles.details}>
+                <h3>{ books.title}</h3>
                 <p>{books.description}</p>
                 <a href={books.link}>Leia mais &gt;</a>
+            </div>
         </div>
-    </div>
             ))
         }
         </>
