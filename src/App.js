@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
-import Topo from './components/Topo/Topo';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Principal from './components/Principal/Principal';
+import Main from './components/Main/Main';
 function App() {
   return (
     <Fragment>
-      <Topo/>
+      <Header />
+      <Main/>
     </Fragment>
   );
 }

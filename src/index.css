@@ -24,3 +24,8 @@ h6 {
   --my-black:rgb(48, 48, 48);
   
 }
+#root{
+display: grid;
+grid-template-columns: 25vw 25vw 25vw 25vw;
+grid-template-rows: 33.33vh 33.33vh 33.34vh;
+}

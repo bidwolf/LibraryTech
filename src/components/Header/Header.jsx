@@ -1,6 +1,6 @@
 import Logo from '../Logo/Logo';
 import Navegação from '../Navegação/Navegação';
-import styles from './Topo.module.css';
+import styles from './Header.module.css';
 function Topo() {
     return ( 
     <header className={styles.topo}>
