@@ -1,11 +1,33 @@
-footer.footer{
-  background: #eaefef;
+.footer{
+  background: var(--main-color);
   position: relative;
   bottom: 0;
+  display: grid;
+  grid-template-columns: 24.2vw 24.2vw 24.2vw 24.2vw;
+  grid-template-rows: 12vh 12vh 12vh;
+  border-radius: 2em;
+  color: black;
+}
+.contact{
+  grid-row: 2/3;
+  grid-column: 1/5;
   display: flex;
-  flex: 1 0 50%;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  margin:auto;
+  border-radius: 2em;
+}
+.enterprise{
+  grid-row: 1/2;
+  grid-column: 1/5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2em;
+}
+.socials{
+  grid-row:3/4;
+  grid-column:1/5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

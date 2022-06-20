@@ -1,9 +1,10 @@
 import React from "react";
 import Home from "../Home/Home";
+import styles from "./Main.module.css"
 function Principal() {
     return ( 
-        <main className='principal'>
-          <Home/>
+        <main className={styles.principal}>
+            <Home/>
       </main>
      );
 }

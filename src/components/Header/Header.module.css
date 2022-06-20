@@ -1,0 +1,16 @@
+.topo{
+    position: relative;
+    top: 0;
+    background-color: var(--main-color);
+    border-bottom: 10px var(--light-gray) solid;
+    border-radius: 2em;
+}
+.topo  a {
+    text-decoration: none;
+}
+.topo  a:link{
+    color: var(--contrast-color);
+}
+.topo a:visited{
+    color:var(--light-gray);
+}

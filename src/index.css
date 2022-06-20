@@ -7,6 +7,8 @@
 body {
   margin: 0;
   font: 1rem sans-serif;
+  background-color: var(--bg-color);
+  color: var(--main-color);
 }
 h1,
 h2,
@@ -17,10 +19,14 @@ h6 {
   margin: 0 0 0.2em 0;
 }
 :root{
-  font-size: 16px;
+  font-size: 20px;
   box-sizing: border-box;
-  --main-color:#dd0000ff;
-  --second-color:#2800aaf3;
-  --black:#0000;
-  
+  margin: 0;
+  padding: 0;
+  --second-color:rgb(253, 80, 80);
+  --main-color:#654fadf3;
+  --my-black:rgb(87, 87, 87);
+  --bg-color:rgb(233, 233, 233);
+  --contrast-color:#EEEEEE;
+  --light-gray:rgb(221, 221, 221);
 }

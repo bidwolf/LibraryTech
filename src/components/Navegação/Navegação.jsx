@@ -1,15 +1,21 @@
 import React from "react";
+import styles from "./Navegação.module.css";
 function Navegação() {
     return (
-        <ul>
-            <li><a href="#news">Lançamentos</a></li>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Front">Frontend</a></li>
-            <li><a href="#Program">Programação</a></li>
-            <li><a href="#Design">Design</a></li>
-            <li><a href='#TopSellers'>Mais vendidos</a></li>
+        <nav className={styles.navbar}>
+            
 
-        </ul>
+            <ul>
+                <li><a href="#news">Lançamentos</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Front">Frontend</a></li>
+                <li><a href="#Program">Programação</a></li>
+                <li><a href="#Design">Design</a></li>
+                <li><a href='#TopSellers'>Mais vendidos</a></li>
+
+            </ul>
+        
+        </nav>
     
     );
 }

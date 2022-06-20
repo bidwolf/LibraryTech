@@ -1,11 +1,16 @@
 import React from "react";
+import styles from "./Logo.module.css";
 const Logo = () => {
     return (
+        
+        
         <a href="#">
-            <div className="logo">
-            <img src="./imagens/logo.svg"alt="logo da library tech"></img>
+            <div className={styles.logo}>
+                <div className={styles.imagem}>
+                    <img src="./imagens/logo.svg"alt="logo da library tech"></img>
+                </div>
+                <h1>LibraryTech</h1>
             </div>
-                <span>LibraryTech</span>
         </a>
     );
 };

@@ -1,0 +1,28 @@
+.logo{
+    display: grid;
+    grid-template-columns: 30vw 60vw;
+    grid-template-rows: 6vh 6vh 6vh;
+    border-radius: 2em;
+    position: relative;
+    top: 0;
+}
+.logo img{
+    max-height: 8vw;
+    max-width: 8vw;
+    min-width: 100px;
+    min-height: 100px;
+    
+}
+.imagem{
+    grid-row:1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1{
+    grid-row-start:2;
+    grid-row-end:2 ;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    
+}
