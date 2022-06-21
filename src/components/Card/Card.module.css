@@ -1,5 +1,6 @@
 .thumb>img{
     width: 14vw;
+    min-width: 173px;
     height: 36vh;
     margin: 2em;
     border-radius: .6em;
@@ -43,6 +44,7 @@ transform: scale(1.05,1.05);
     border-radius: .6em;
     background-color: var(--main-color);
     padding: .2em;
+    text-align: center;
 }
 .details a:hover{
     color: var(--contrast-color);
