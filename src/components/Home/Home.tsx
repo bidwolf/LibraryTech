@@ -1,4 +1,3 @@
-import { React } from "react";
 import Card from "../Card/Card";
 import styles from "./Home.module.css"
 import { Fragment } from "react";
