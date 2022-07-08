@@ -1,6 +1,20 @@
 import React from "react";
 import styles from "./Card.module.css"
-function Card({dados}) {
+interface IProps{
+    dados: IBooks[];
+}
+interface IBooks{  
+    imagem: {
+        src: string;
+        alt: string;
+    };
+
+    title: string;
+    description: string;
+    link: string;
+}
+
+const Card :React.FC<IProps>=({dados}:IProps) =>{
     
     return (
         <>
