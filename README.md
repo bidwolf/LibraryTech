@@ -73,6 +73,42 @@ Dependency|Version|Function
 typescript|^4.7.4|Apply types to your JavaScript project incrementally, each step improves editor support and improves your codebase
 
 ---
+
 ### The tsconfig.json
 
 This is the main resource of configuration of application, because of him, the typescript will be transpile to javascript behaving like the project before the changes of this topic(not all).
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
+}
+
+```
+
+* The `allowJs` option help you to allow files .js in your project.
+* The `module` option help you to select the import and export method
+* The `include` option determines directories to match your application files
+* The `target` option set the target language to support and set compatibilities methods to them.
