@@ -56,105 +56,23 @@ You don't have to ever use `eject` . The curated feature set is suitable for sma
  - [ ] Pratice CSS Animations
  - [ ] Pratice Typescript and Javascript a lot
 
+## Configuring typescript project
+
+When you starts the project based on the book, maybe you use create-react app without template of typescript, it's proposital, us objective is practice and learn many forms to configure this project. For that reason, this topic will teach how use typescript in a react project without one automatic configuration template.
+
+### Dependencies
+
+First, we need install some dependencies, below in, are listed the dependencies and there functions in us configuration:
+
+Dependency|Version|Function
+:---:|:---:|:---:
+@types/react|^18.0.15|This dependency provides types of the lib to utilize in typescript archives.
+@types/react-dom|^18.0.6|This dependency provides types of the lib to utilize in typescript archives.
+@types/node|^18.0.3|This dependency provides types of the lib to utilize in typescript archives.
+@types/jest|^28.1.4|This dependency provides types of the lib to utilize in typescript archives.
+typescript|^4.7.4|Apply types to your JavaScript project incrementally, each step improves editor support and improves your codebase
+
 ---
+### The tsconfig.json
 
-## Creating a component in React
-
-You will learn more about components, and the estruture of them later, but what you need to know is:
-
-#### To create functional components (JSX)
-
-```jsx
-//FCC - Create functional component jsx
-import React from 'react';
-import styles from './component.css'
-const ComponentName = ()=>{
-    return(
-        <div className="componentClass">
-            Jsx code here
-        </div>
-    )
-}
-export default ComponentName
-```
-
-#### To create Class components
-
-```jsx
-//CC - Create class component jsx
-import React,{Component} from 'react';
-import styles from './component.css'
-
-class  extends Component {
-    state = { 
-        initial:'initial value'//component state, when starts render, part of initializing component life-cycle 
-     }
-    static getDerivedStateFromProps(props,state){
-        /*
-        Unique method available in initializing phase
-        DON'T USE THAT, see documentation
-        It's called in the Updating Phase too
-        */ 
-     }
-    render() { 
-        // This method returns an React Element to component load, will be called when starts and when state is updated
-            return (
-               <div>
-                   JSX code 
-               </div>
-            );
-        }
-    componentDidMount(){
-        /*This method is called after the component is render 
-        usually called to load blocking scripts like API
-        loads, because the main content has already been
-        rendered. Part of mounting component life-cycle*/
-    }
-         shouldComponentUpdate(){
-            /*
-            This method will be called to verify if the updated
-            value of state  should cause a new rendering in the
-            component
-            Good to help in performance where the state update
-            constantly
-            */
-         }
-         getSnapshotBeforeUpdate(){
-            /*
-            This method will be called before an re-update renderer
-            in the component.
-            Allows the catch of DOM information before updating the component, which can be passed as parameters to the method componentDidUpdate
-            */
-         }
-    componentDidUpdate(){
-        /*
-        Called after renderer the component by update
-        */
-    }
-    componentWillUnmount(){
-        /*
-        This method is part of Unmounting life-cycle, and is
-        the unique method of this phase, will be called before removing component in the DOM.
-        */
-    }
-}
-export default ComponentName
-```
-
-#### Using components in JSX
-
-To use an existing component in your project, you can add your component in the `App.jsx` or other component `Component.jsx` with an code like:
-
-```jsx
-import ComponentName from './component/ComponentName.jsx'
-
-//code of rootComponent (App.jsx or any other) component here
-//(can be class or functional component)
-    render(){
-        return(
-            <div className="rootComponent">
-                <ComponentName prop={propsOfComponent}>
-            </div>
-        )
-    }
-```
+This is the main resource of configuration of application, because of him, the typescript will be transpile to javascript behaving like the project before the changes of this topic(not all).
