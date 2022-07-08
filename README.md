@@ -112,3 +112,14 @@ This is the main resource of configuration of application, because of him, the t
 * The `module` option help you to select the import and export method
 * The `include` option determines directories to match your application files
 * The `target` option set the target language to support and set compatibilities methods to them.
+
+### The changes in the project files
+
+When we change components to tsx files we need to pay attention if the component have props. The presence of props in functional components provides changes in the type of component, because, props will need type, and additionally functional components can receive another parameters like children, and you don't need create an interface to him, you need to use the syntax below :
+
+```ts
+const component:React.FC<InterfaceOfComponentProps>(props:InterfaceOfComponentProps){
+    //Your code of component go here...
+}
+```
+The `<InterfaceOfComponentProps>` pass to `component` the type of the component props, it's one param of the `React.FC`.
