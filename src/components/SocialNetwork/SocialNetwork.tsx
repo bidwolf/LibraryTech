@@ -1,7 +1,16 @@
 import React from 'react';
 import styles from './SocialNetwork.module.css'
 import { Fragment } from 'react';
-const SocialNetwork = ({name,link,icon}) => {
+interface Props {
+    link: string;
+    name: string;
+    icon: Icon;
+}
+interface Icon{
+    src: string;
+    alt: string;
+}
+const SocialNetwork:React.FC<Props> = ({name,link,icon}:Props) => {
     return (
         <Fragment>
 
