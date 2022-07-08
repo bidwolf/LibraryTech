@@ -9,12 +9,12 @@
     margin-left: 5vw;
     margin-right: 5vw;
 }
-.navbar li a {
+.navbar li .navLink {
     border-radius: 0.6em;
     padding: 10px;
     border: 1px solid #ffffff00;
 }
-.navbar li a:hover{
+.navbar li .navLink:hover{
     border: 1px white solid;
     transition: all 200ms;
     background-color: #00000021;
