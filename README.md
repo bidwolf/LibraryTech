@@ -119,7 +119,7 @@ When we change components to tsx files we need to pay attention if the component
 
 ```ts
 const component:React.FC<InterfaceOfComponentProps>(props:InterfaceOfComponentProps){
-    //Your code of component go here...
+    //Your code of component going here...
 }
 ```
 The `<InterfaceOfComponentProps>` pass to `component` the type of the component props, it's one param of the `React.FC`.
