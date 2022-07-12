@@ -7,10 +7,10 @@
     100%{transform: rotate(0deg);}
 }
 .socialMedia img{
-    width: 5vw;
-    height: 5vw;
-    min-width: 60px;
-    min-height: 60px;
+    width: 3vw;
+    height: 3vw;
+    min-width: 50px;
+    min-height: 50px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     transition: linear all 200ms;
     background-color: white;
