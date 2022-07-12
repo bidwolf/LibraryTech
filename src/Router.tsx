@@ -5,7 +5,8 @@ function Router() {
     return (
         <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/:slug"element={<MainPage/>}/>
+            <Route path="/:slug" element={<MainPage />} />
+            <Route path="*"element={<NotFound />} />
         </Routes>
 
     );

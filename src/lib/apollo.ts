@@ -1,6 +1,5 @@
-
 import { ApolloClient, InMemoryCache } from "@apollo/client";
-const API_URL: string = process.env.API_URL || "https://api-sa-east-1.graphcms.com/v2/cl4oenrc924cn01xiezv89e0m/master"; 
+const API_URL=process.env.REACT_APP_CONTENT_API;
 export const client = new ApolloClient({
     uri: API_URL,
     cache: new InMemoryCache()

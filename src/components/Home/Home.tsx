@@ -1,64 +1,43 @@
 import Card from "../Card/Card";
 import styles from "./Home.module.css"
 import { Fragment } from "react";
-const dados = [
-    {
-        imagem: {
-            src: "imagens/capas/react.jpg",
-            alt: "Capa do livro React"
-        },
-        title: "React para iniciantes",
-        description: "Iniciando no react você vai aprender...",
-        link: "#React"
-    },
-    {
-        imagem: {
-            src: "imagens/capas/node_express.jpg",
-            alt: "Capa do livro de Node e Express"
-        },
-        title: "Programação Web com Node e Express",
-        description: "Construa aplicações web dinâmicas com o express...",
-        link: "#Express"
-    },
-    {
-        imagem: {
-            src: "imagens/capas/node_express.jpg",
-            alt: "Capa do livro de Node e Express"
-        },
-        title: "Programação Web com Node e Express",
-        description: "Construa aplicações web dinâmicas com o express...",
-        link: "#Express"
-    },
-    {
-        imagem: {
-            src: "imagens/capas/node_express.jpg",
-            alt: "Capa do livro de Node e Express"
-        },
-        title: "Programação Web com Node e Express",
-        description: "Construa aplicações web dinâmicas com o express...",
-        link: "#Express"
-    },{
-        imagem: {
-            src: "imagens/capas/react.jpg",
-            alt: "Capa do livro React"
-        },
-        title: "React para iniciantes",
-        description: "Iniciando no react você vai aprender...",
-        link: "#React"
-    },
-];
+import { gql, useQuery } from "@apollo/client";
+
+const GET_ENTITY_QUERY = gql`
+query QueryBooks {
+  books {
+    title
+    description
+    isbn
+    cover
+  }
+}
+`
+interface IGetBooksQueryResponse {
+    books: book[]
+}
+interface book {
+    title: string
+    description: string
+    isbn: string
+    cover: string
+
+}
 function Home() {
+    const { data } = useQuery<IGetBooksQueryResponse>(GET_ENTITY_QUERY);
+    console.log(data)
     return (
         <Fragment>
             <header className={styles.home__header}>
-                    <h2>Últimos Lançamentos</h2>
-                </header>
+                <h2>Últimos Lançamentos</h2>
+            </header>
             <div className={styles.main}>
-                
-                <Card dados={dados}/>    
+                {
+                 data?<Card books={data.books}/>:<p> no books found</p>
+                }
             </div>
         </Fragment>
-     );
+    );
 }
 
 export default Home;

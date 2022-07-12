@@ -15,7 +15,7 @@ const SocialNetwork:React.FC<Props> = ({name,link,icon}:Props) => {
         <Fragment>
 
         <div className={styles.socialMedia}>
-            <a target="_blank" href={link}>
+            <a target="_blank" rel="noreferrer" href={link}>
                 <img src={icon.src} alt={icon.alt} aria-label={name}></img>
             </a>
         </div>
