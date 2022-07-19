@@ -25,8 +25,7 @@ interface book {
 }
 function Home() {
     const { data } = useQuery<IGetBooksQueryResponse>(GET_ENTITY_QUERY);
-    console.log(data)
-    return (
+     return (
         <Fragment>
             <header className={styles.home__header}>
                 <h2>Últimos Lançamentos</h2>

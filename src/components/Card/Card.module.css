@@ -30,12 +30,14 @@
     z-index: -1;
 }
 .card:hover{
-transform: scale(1.05,1.05);
+transform: scale(1.02,1.02);
 }
 .details{
     z-index: 1;
     margin-left: .2em;
     position: relative;
+    padding: .2em;
+
 }
 .details a{
     text-decoration: none;
@@ -43,10 +45,15 @@ transform: scale(1.05,1.05);
     color: var(--light-gray);
     border-radius: .6em;
     background-color: var(--main-color);
-    padding: .2em;
     text-align: center;
 }
 .details a:hover{
     color: var(--contrast-color);
     transition:linear all 450ms;
+}
+.title{
+    text-align: center;
+}
+.description{
+    margin:1em;
 }

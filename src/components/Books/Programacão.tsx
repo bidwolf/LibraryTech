@@ -10,15 +10,15 @@ interface book {
     cover: string
 
 }
-function Design({ books }:IGetBooksQueryResponse) {
+function Programação({ books }:IGetBooksQueryResponse) {
     
       
     
      return (
-         <main className={styles.principal}>
-             
+        <main className={styles.principal}>
+
             <header className={styles.home__header}>
-                <h2>Design</h2>
+                <h2>Programação</h2>
             </header>
             <div className={styles.main}>
                 
@@ -29,4 +29,4 @@ function Design({ books }:IGetBooksQueryResponse) {
     );
 }
 
-export default Design;
+export default Programação;

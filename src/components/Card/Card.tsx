@@ -25,8 +25,8 @@ const Card: React.FC<IGetBooksQueryResponse> = ({books}:IGetBooksQueryResponse) 
                 <img src={ books.cover} alt={"Capa do livro "+books.title}/>
             </div>
             <div className={styles.details}>
-                <h3>{ books.title}</h3>
-                <p>{books.description}</p>
+                <h3 className={styles.title}>{ books.title}</h3>
+                <p className={styles.description}>{books.description}</p>
             </div>
         </div>
             ))

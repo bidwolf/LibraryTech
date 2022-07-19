@@ -17,10 +17,10 @@ const Navegação: React.FC = () => {
 
             <ul>
                 <li><NavLink className={styles.navLink} style={ navLinkStyles} to="/">Home</NavLink></li>
-                <li><NavLink className={styles.navLink} style={ navLinkStyles} to="/front">Frontend</NavLink></li>
-                <li><NavLink className={styles.navLink} style={ navLinkStyles} to="/programation">Programação</NavLink></li>
-                <li><NavLink className={styles.navLink} style={ navLinkStyles} to="/design">Design</NavLink></li>
-                <li><NavLink className={styles.navLink} style={ navLinkStyles} to='/top-sellers'>Mais vendidos</NavLink></li>
+                <li><NavLink className={styles.navLink} style={ navLinkStyles} to="/Frontend">Frontend</NavLink></li>
+                <li><NavLink className={styles.navLink} style={ navLinkStyles} to="/Programação">Programação</NavLink></li>
+                <li><NavLink className={styles.navLink} style={ navLinkStyles} to="/Design">Design</NavLink></li>
+                <li><NavLink className={styles.navLink} style={ navLinkStyles} to='/Top-sellers'>Mais vendidos</NavLink></li>
 
             </ul>
         
